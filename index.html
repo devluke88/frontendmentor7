@@ -19,17 +19,17 @@
 </head>
 <body>
 
-  <div class="bg"></div>
+  <div class="bg"> </div>
   <nav class="navbar">
     <div class="navbar__img">
-      <img src="images/logo.svg" alt="logo">
+      <a href="#"><img src="images/logo.svg" alt="logo"></a>
     </div>
     <ul class="navbar__links">
       <li class="list-link"><a href="#">Product</a></li> 
       <li class="list-link"><a href="#">Features</a></li>
       <li class="list-link"><a href="#">Pricing</a></li>
-      <li class="list-link"><a href="#"> </a></li>
-      <li class="list-link"><a href="#">Login</a></li>
+      <li class="list-link"><a href="" class="circle">&#9679;</a></li>
+      <li class="list-link gray"><a href="#" class="login">Login</a></li>
     </ul>     
   </nav>
   
@@ -41,10 +41,14 @@
           <span class="hero-header__mono">Monograph Dashboard</span>
           <h1 class="hero-header__main">Powerful insights into your team</h1>
           <p class="hero-header__desc">Project planning and time tracking for agile teams</p>
-          <a href="#" class="btn btn-hero">Schedule a demo</a><span> to see a live preview</span>
+          <div class="hero-header__footer">
+            <a href="#" class="btn btn-hero">Schedule a demo</a>
+            <p class="footer-desc"> to see a preview</p>
+          </div> 
+          
       </div>
       <div class="hero-img">
-        <img src="images/illustration-devices.svg" alt="hero-img__image">
+        <img src="images/illustration-devices.svg" alt="hero image" class="hero-img__image">
       </div>
     </header>
     
@@ -61,7 +65,7 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">lukenow.com</a>.
     </p>
   </footer>
 </body>

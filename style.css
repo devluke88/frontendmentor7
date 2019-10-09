@@ -88,7 +88,7 @@ a.circle {
 }
 
 a.login {
-  color: var(--dark-grayish-blue);
+  color: var(--grayish-blue);
 }
 
 .list-link a:hover:not(.circle) {
@@ -100,14 +100,14 @@ a.login {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: stretch;
-  align-items: center;
+  align-items: flex-start;
   border: 1px solid red;
   padding-top: 4.8rem;
 }
 
 .hero-header {
   border: 1px solid blue;
-  padding: 4rem 3rem 0 16.5rem;
+  padding: 5rem 3rem 0 16.5rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }

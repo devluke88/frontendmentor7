@@ -23,15 +23,22 @@
   <nav class="navbar">
     <div class="navbar__img">
       <a href="#"><img src="images/logo.svg" alt="logo" class="navlogo"></a>
+      
+      <button aria-expanded="false" aria-controls="navbar__links">
+        <ion-icon name="menu" class="menu"></ion-icon>
+        <ion-icon name="close" class="close"></ion-icon>
+      </button>
+
     </div>
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapsed">
-      <ion-icon name="menu"></ion-icon>
-    </button>
+
+    
+    
     <ul class="navbar__links">
       <li class="list-link"><a href="#">Product</a></li> 
       <li class="list-link"><a href="#">Features</a></li>
       <li class="list-link"><a href="#">Pricing</a></li>
-      <li class="list-link"><a href="" class="circle">&#9679;</a></li>
+      <li class="list-link special"><hr class="kreska"><a href="" class="circle">&#9679;</a></li>
+      
       <li class="list-link gray"><a href="#" class="login">Login</a></li>
     </ul>     
   </nav>
@@ -58,12 +65,6 @@
   
 
   
-
-  
-  
-  
-
-  
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
@@ -71,6 +72,10 @@
     </p>
   </footer>
 
+
+
+
+   
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>

@@ -95,6 +95,14 @@ a.login {
   text-decoration: underline;
 }
 
+button {
+  display: none;
+}
+
+.kreska {
+  display: none;
+}
+
 /*HERO*/
 .hero-section {
   display: grid;

@@ -24,10 +24,13 @@
     <div class="navbar__img">
       <a href="#"><img src="images/logo.svg" alt="logo" class="navlogo"></a>
       
-      <button aria-expanded="false" aria-controls="navbar__links">
+      <!-- <button aria-expanded="false" aria-controls="navbar__links">
         <ion-icon name="menu" class="menu"></ion-icon>
         <ion-icon name="close" class="close"></ion-icon>
-      </button>
+      </button> -->
+      <a href="#" class="toogle" id="navHamburger">
+        <ion-icon name="menu" class="menu"></ion-icon>
+      </a>
 
     </div>
 
@@ -74,7 +77,13 @@
 
 
 
+<script>
+  const navHamburger = document.querySelector('#navHamburger');
+  navHamburger.addEventListener('click' , (e) => {
+    navHamburger.parentElement.classList.toggle('active');
+  })
 
+</script>
    
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>

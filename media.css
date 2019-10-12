@@ -1,5 +1,16 @@
 @media (max-width: 1250px) {
-    
+
+    .navbar {
+        padding: 5.6rem 9rem;
+    }
+
+    .hero-header {
+        padding: 4rem 2rem 0 9rem;
+    }
+      
+    .hero-header__desc {
+        margin-bottom: 5rem;
+    }
     
 }
 
@@ -9,12 +20,22 @@
         display: inline-block;
     }
 
+    .navbar__img .toogle {
+        display: inline;
+        color: black;
+        padding: 1em;
+    }
+
+    .navbar__img .active {
+        display: block;
+    }
+
     .navbar__img {
         width: 100%;
         display: flex;
         margin: 0 auto;
         justify-content: space-between;
-        
+        align-items: center;
     }
 
     .close {
@@ -23,11 +44,11 @@
 
     .navbar {
         flex-direction: column;
-        padding: 2rem;
+        padding: 2rem 4rem;
         position: relative;
     }
-
-    .navbar__links {
+  
+    .navbar__links { 
         box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
         display: flex;
@@ -36,18 +57,13 @@
         justify-content: space-between;
         height: 23.2rem;
         width: calc(100% - 4.2rem);
-        
         background-color: #fff;
         padding: 2rem 2rem;
-
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        
         margin-top: 150px;
-        /* height: 23.2rem;
-        width: 31.2rem; */
     }
 
 
@@ -76,49 +92,53 @@
 
     .hero-section {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr ;
+        grid-gap: 10px;
         align-items: flex-start;
-        border: 1px solid red;
-        padding-top: 4.8rem;
+        justify-content: flex-start;
+        padding-top: 3rem;
+    }
+
+    .hero-header {
+        padding: 4rem
+    }
+
+    .hero-img {
+        margin-top: 7rem;
     }
    
 }
 
 @media (max-width: 550px) {
 
-    
+    .hero-header__new {
+        font-size: 1.2rem;
+    }
+
+    .hero-header__desc {
+        padding-right: 4rem;
+    }
+
+    .btn {
+        font-size: 1.3rem;
+        padding: 1.6rem 2rem;
+    }
+        
+    .btn-hero {
+        background-color: var(--red);
+        color: #fff;
+    }
+
+    .footer-desc {
+        font-size: 1.4rem;
+    }
 }
 
 @media (max-width: 375px) {
 
-    html {
-        font-size: 62.5%;
-    }
-
     body {
-        background-color: aquamarine;
         font-size: 1rem;
     }
-
-    /* .navbar {
-        padding: 3.3rem 3.2rem;
-    }
-
-    .navlogo {
-        width: 2.4rem;
-    }
-
-    .navbar__links {
-        display: none;
-    } */
-
-    /* .hero-section {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        align-items: flex-start;
-        border: 1px solid red;
-        padding-top: 4.8rem;
-    } */
     
     .hero-header {
         order: 2;

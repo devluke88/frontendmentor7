@@ -20,6 +20,51 @@
         display: inline-block;
     }
 
+    
+
+    .hero-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
+        grid-gap: 10px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 3rem;
+    }
+
+    .hero-header {
+        padding: 4rem
+    }
+
+    .hero-img {
+        margin-top: 7rem;
+    }
+   
+}
+
+@media (max-width: 650px) {
+
+    .hero-header__new {
+        font-size: 1.2rem;
+    }
+
+    .hero-header__desc {
+        padding-right: 4rem;
+    }
+
+    .btn {
+        font-size: 1.3rem;
+        padding: 1.6rem 2rem;
+    }
+        
+    .btn-hero {
+        background-color: var(--red);
+        color: #fff;
+    }
+
+    .footer-desc {
+        font-size: 1.4rem;
+    }
+
     .navbar__img .toogle {
         display: inline;
         color: black;
@@ -88,49 +133,6 @@
 
     ion-icon {
         font-size: 3.2rem;
-    }
-
-    .hero-section {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr ;
-        grid-gap: 10px;
-        align-items: flex-start;
-        justify-content: flex-start;
-        padding-top: 3rem;
-    }
-
-    .hero-header {
-        padding: 4rem
-    }
-
-    .hero-img {
-        margin-top: 7rem;
-    }
-   
-}
-
-@media (max-width: 550px) {
-
-    .hero-header__new {
-        font-size: 1.2rem;
-    }
-
-    .hero-header__desc {
-        padding-right: 4rem;
-    }
-
-    .btn {
-        font-size: 1.3rem;
-        padding: 1.6rem 2rem;
-    }
-        
-    .btn-hero {
-        background-color: var(--red);
-        color: #fff;
-    }
-
-    .footer-desc {
-        font-size: 1.4rem;
     }
 }
 

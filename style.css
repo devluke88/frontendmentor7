@@ -51,7 +51,7 @@ body {
   padding: 6.5rem 16.5rem;
 }
 
-.navbar__links {
+#navbar__links {
   display: flex;
   flex-basis: 37.8rem;
   justify-content: space-between;
@@ -184,4 +184,8 @@ a.login {
 
 .attribution {
   padding: 5rem;
+}
+
+.close {
+  display: none;
 }

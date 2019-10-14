@@ -28,15 +28,16 @@
         <ion-icon name="menu" class="menu"></ion-icon>
         <ion-icon name="close" class="close"></ion-icon>
       </button> -->
-      <a href="#" class="toogle" id="navHamburger">
-        <ion-icon name="menu" class="menu"></ion-icon>
+      <a href="#" onclick="toggleMenu()" class="toogle" id="navHamburger">
+        <ion-icon name="menu" class="menu" id="menu"></ion-icon>
+        <ion-icon name="close" class="close" id="close"></ion-icon>
       </a>
 
     </div>
 
     
     
-    <ul class="navbar__links">
+    <ul id="navbar__links">
       <li class="list-link"><a href="#">Product</a></li> 
       <li class="list-link"><a href="#">Features</a></li>
       <li class="list-link"><a href="#">Pricing</a></li>
@@ -77,13 +78,15 @@
 
 
 
-<script>
+<!-- <script>
   const navHamburger = document.querySelector('#navHamburger');
   navHamburger.addEventListener('click' , (e) => {
     navHamburger.parentElement.classList.toggle('active');
   })
 
-</script>
+</script> -->
+
+<script src="js.js"></script>
    
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>

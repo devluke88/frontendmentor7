@@ -83,20 +83,18 @@
         align-items: center;
     }
 
-    .close {
-        display: none;
-    }
 
     .navbar {
         flex-direction: column;
         padding: 2rem 4rem;
         position: relative;
     }
+    
   
-    .navbar__links { 
+    #navbar__links { 
         box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
@@ -111,6 +109,13 @@
         margin-top: 150px;
     }
 
+    .navbar__links {
+     display: none;   
+    }
+
+    .navbar__links--visible {
+        opacity: 1;
+    }
 
     .list-link {
         font-size: 1.8rem;
@@ -133,6 +138,14 @@
 
     ion-icon {
         font-size: 3.2rem;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    .close {
+        display: none;
     }
 }
 

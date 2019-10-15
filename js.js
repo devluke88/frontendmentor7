@@ -3,14 +3,15 @@ function toggleMenu() {
     var iconMenu = document.getElementById('menu');   
     var iconClose = document.getElementById('close');
 
-    if (navbar__links.style.display == "none") { 
-      navbar__links.style.display = "flex";
-      iconMenu.style.display = "none";
-      iconClose.style.display = "block";     
-    }
-    else { 
+    if (navbar__links.style.display == "flex") { 
       navbar__links.style.display = "none";
       iconMenu.style.display = "block";
       iconClose.style.display = "none";
+         
+    }
+    else { 
+      navbar__links.style.display = "flex";
+      iconMenu.style.display = "none";
+      iconClose.style.display = "block";  
     }
   }

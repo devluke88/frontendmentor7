@@ -84,7 +84,7 @@ a.login {
   text-decoration: underline;
 }
 
-.navbar__img .toogle {
+.toogle {
   display: none;
 }
 
@@ -186,6 +186,6 @@ a.login {
   padding: 5rem;
 }
 
-.close {
+#close {
   display: none;
 }

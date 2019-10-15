@@ -1,17 +1,16 @@
 function toggleMenu() {
-    var menuBox = document.getElementById('navbar__links'); 
-    var icon = document.getElementById('menu');   
-    var icon2 = document.getElementById('close')
-    if(menuBox.style.display == "none") { // if is menuBox displayed, hide it
-      menuBox.style.display = "flex";
-      icon.style.display = "block";
-      icon2.style.display = "none"
-      
-      
+    var navbar__links = document.getElementById('navbar__links'); 
+    var iconMenu = document.getElementById('menu');   
+    var iconClose = document.getElementById('close');
+
+    if (navbar__links.style.display == "none") { 
+      navbar__links.style.display = "flex";
+      iconMenu.style.display = "none";
+      iconClose.style.display = "block";     
     }
-    else { // if is menuBox hidden, display it
-      menuBox.style.display = "none";
-      icon.style.display = "none"
-      icon2.style.display = "block"
+    else { 
+      navbar__links.style.display = "none";
+      iconMenu.style.display = "block";
+      iconClose.style.display = "none";
     }
   }
